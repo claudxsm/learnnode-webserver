@@ -40,11 +40,17 @@ app.get('/', (req, res) => {
         pageTitle: 'home page',
         welcomeMessage: 'welcome'
     });
-});
+}); 
 
 app.get('/about', (req, res) => {
     res.render('about.hbs', {
         pageTitle: 'about page'
+    });
+});
+
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'projects page'
     });
 });
 
